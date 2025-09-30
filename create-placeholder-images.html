@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Générateur d'images placeholder</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .placeholder { margin: 20px 0; text-align: center; }
+        canvas { border: 1px solid #ccc; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Générateur d'images placeholder pour votre CV</h1>
+    <p>Cliquez sur "Générer les images" pour créer des images placeholder que vous pourrez remplacer par vos vraies photos.</p>
+    
+    <button onclick="generateImages()">Générer les images</button>
+    
+    <div id="images-container"></div>
+
+    <script>
+        function generateImages() {
+            const images = [
+                { name: 'profile-photo.jpg', width: 400, height: 400, text: 'Photo\nProfil', color: '#3498db' },
+                { name: 'about-photo.jpg', width: 500, height: 360, text: 'Photo\nÀ propos', color: '#9b59b6' },
+                { name: 'team-work.jpg', width: 600, height: 400, text: 'Travail\nd\'équipe', color: '#e74c3c' },
+                { name: 'technology.jpg', width: 600, height: 400, text: 'Technologies', color: '#f39c12' },
+                { name: 'office-brest.jpg', width: 600, height: 400, text: 'Bureau\nBrest', color: '#27ae60' },
+                { name: 'conference.jpg', width: 600, height: 400, text: 'Conférence', color: '#8e44ad' },
+                { name: 'aws-cloud.jpg', width: 600, height: 400, text: 'AWS\nCloud', color: '#ff9500' },
+                { name: 'genesys-team.jpg', width: 600, height: 400, text: 'Équipe\nGenesys', color: '#1abc9c' }
+            ];
+
+            const container = document.getElementById('images-container');
+            container.innerHTML = '';
+
+            images.forEach(img => {
+                const div = document.createElement('div');
+                div.className = 'placeholder';
+                
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                
+                const ctx = canvas.getContext('2d');
+                
+                // Gradient background
+                const gradient = ctx.createLinearGradient(0, 0, img.width, img.height);
+                gradient.addColorStop(0, img.color);
+                gradient.addColorStop(1, adjustBrightness(img.color, -20));
+                
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, img.width, img.height);
+                
+                // Text
+                ctx.fillStyle = 'white';
+                ctx.font = 'bold 32px Arial';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                
+                const lines = img.text.split('\n');
+                const lineHeight = 40;
+                const startY = img.height / 2 - (lines.length - 1) * lineHeight / 2;
+                
+                lines.forEach((line, index) => {
+                    ctx.fillText(line, img.width / 2, startY + index * lineHeight);
+                });
+                
+                // Add some decorative elements
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+                for (let i = 0; i < 20; i++) {
+                    const x = Math.random() * img.width;
+                    const y = Math.random() * img.height;
+                    const radius = Math.random() * 30 + 10;
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                
+                const title = document.createElement('h3');
+                title.textContent = img.name;
+                
+                const downloadLink = document.createElement('a');
+                downloadLink.href = canvas.toDataURL();
+                downloadLink.download = img.name;
+                downloadLink.textContent = 'Télécharger';
+                downloadLink.style.display = 'block';
+                downloadLink.style.marginTop = '10px';
+                
+                div.appendChild(title);
+                div.appendChild(canvas);
+                div.appendChild(downloadLink);
+                container.appendChild(div);
+            });
+        }
+
+        function adjustBrightness(hex, percent) {
+            const num = parseInt(hex.replace("#", ""), 16);
+            const amt = Math.round(2.55 * percent);
+            const R = (num >> 16) + amt;
+            const G = (num >> 8 & 0x00FF) + amt;
+            const B = (num & 0x0000FF) + amt;
+            return "#" + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+                (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+                (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+Coordonnées
+thomas.fred@gmail.com
+www.linkedin.com/in/fredericthomas-a240754a (LinkedIn)
+Principales compétences
+Software Development
+Amazon Web Services
+DevOps
+Languages
+Anglais (Professional Working)
+Certifications
+ITIL® Foundation Certificate in IT
+Service Management
+Patents
+Media channel management
+apparatus for network
+communications sessions
+Process for sending an electronic file
+to at least one contact of a user
+Method and devices for processing
+data streams for summary creation
+Methods to route, to address and
+to receive a communication in a
+contact center, caller endpoint,
+communication server, document
+server for these methods
+Frederic Thomas
+Senior Software Engineering Manager chez Genesys
+Brest et périphérie
+Résumé
+Gestion humaine, technique et projet ... Dans cette ordre surtout :-)
+Expérience
+Genesys
+14 ans 9 mois
+Senior Software Engineering Manager
+février 2025 - Present (8 mois)
+Genesys Cloud R&D : Reponsable du développement des services ACD Chat
+et ACD Webmessaging
+Management d’équipes en France (3 pers.)
+Contacts quotidiens avec des équipes internationales (USA, Irlande, Canada,
+Hongrie, Israël)
+Méthode AGILE, DevOps, Java, Typescript, Rest API, WebSocket, Swagger,
+Amazon Web Services, livraison continue, Bitbucket.
+-----------------------------------------------------------------------------------------------------------
+Genesys Cloud R&D : Dev manager for ACD Chat and ACD WebMessaging
+services
+Team management : France (3 pers.)
+Daily interntational interactions : USA, Ireland, Canad, Hungary, Israël)
+AGILE Method, DevOps, Java, Typescript, Rest API, WebSocket, Swagger,
+Amazon Web Services, Continous Delivery, Bitbucket.
+Senior Software Engineering Manager
+janvier 2020 - février 2025 (5 ans 2 mois)
+Genesys Cloud R&D : Reponsable du développement des services ACD
+Email, ACD Chat et ACD Webmessaging
+Page 1 of 5Management d’équipes en France (6 pers.) et en Irlande (3 pers.)
+Contacts quotidiens avec des équipes internationales (USA, Royaume-Uni,
+Irlande, Canada, Hongrie, Israël)
+Méthode AGILE, DevOps, Java, Typescript, Rest API, WebSocket, Swagger,
+Amazon Web Services, livraison continue, Bitbucket.
+-----------------------------------------------------------------------------------------------------------
+Genesys Cloud R&D : Dev manager for ACD Email, ACD Chat and ACD
+WebMessaging services
+Interntational team management : France (6 pers.) and Ireland (3 pers.)
+Daily interntational interactions : USA, UK, Ireland, Canad, Hungary, Israël)
+AGILE Method, DevOps, Java, Typescript, Rest API, WebSocket, Swagger,
+Amazon Web Services, Continous Delivery, Bitbucket.
+Software Development Manager
+janvier 2011 - mars 2020 (9 ans 3 mois)
+Région de Brest, France
+Genesys Engage R&D - Responsable du développement de plusieurs
+projets :
+- un SDK en Java
+- un serveur de services SOAP
+- un serveur pour la gestion de contact et d’historique
+- un service hébergé pour le téléchargement de fichiers
+Management d’équipes en France (5 pers.), en Ukraine (3 pers.) et aux EtatsUnis (1 pers)
+Contacts quotidiens avec des équipes internationales (USA, Royaume-Uni,
+Inde, Ukraine, Russie)
+Méthode AGILE, Java, SOAP, SQL, Cassandra, ElasticSearch, Amazon Web
+Service, Docker, intégration continue, Mercurial.
+-----------------------------------------------------------------------------------------------------------
+Page 2 of 5Genesys Engage R&D - Dev Lead of several projects :
+- One SDK en Java
+- One SOAP server
+- One server dedicated to handle contact and associated history - Premise and
+cloud deployment
+- One server used to download files - cloud deployment
+Interntational team management : France (5 pers.), Ukraine (3 pers.) and US
+based (1 pers)
+Daily interntational interactions : USA, UK, India, Ukraine, Russia)
+AGILE Method, Java, SOAP, SQL, Cassandra, ElasticSearch, Amazon Web
+Service, Docker, Continous integration, Mercurial.
+Alcatel-Lucent Enterprise
+7 ans
+Software Architect
+avril 2007 - décembre 2011 (4 ans 9 mois)
+Région de Brest, France
+Responsable technique des évolutions fonctionnelles avec l’utilisation de
+logiciels Genesys.
+Support d’applications web.
+Déplacements et contacts réguliers avec des équipes en Russie.
+Méthode AGILE, Apache, Struts, SQL, UML, Java, Genesys.
+-----------------------------------------------------------------------------------------------------------
+Technical leader for new features based on Genesys software capabilites
+Web applications support
+Several trip in Russia and regular contact with local teams
+AGILE method , Apache, Struts, SQL, UML, Java, Genesys.
+Developpeur Logiciel
+Page 3 of 5janvier 2005 - avril 2007 (2 ans 4 mois)
+Région de Brest, France
+Développement d'un composant pour la distribution d'appels et d'emails basé
+sur des logiciels Genesys.
+Méthode AGILE, Use Case, UML, Java, Genesys.
+-----------------------------------------------------------------------------------------------------------
+Developpment of a component dedicated to voice call and email interaction
+routing on top of Genesys software
+AGILE Method, Use Case, UML, Java, Genesys.
+Micropole Univers / Apsalys
+Developpeur Logiciel
+août 2003 - décembre 2004 (1 an 5 mois)
+Région de Brest, France
+En mission chez Alcatel-Lucent :
+Support d’applications embarquées dans le PABX OXE pour des
+fonctionnalités d’entreprises et de centres d’appels
+C++, Client-Serveur, Linux.
+-----------------------------------------------------------------------------------------------------------
+Contractor for Alcatel-Lucent :
+Embbeded application support included in OXE (PABX) for entreprise and
+contact centre feature
+C++, Client-Server, Linux.
+Alcatel-Lucent Enterprise
+Stagiare - Projet de fin d'etudes
+juin 2002 - janvier 2003 (8 mois)
+Région de Brest, France
+Prototype de serveurs / clients pour la présence et la messagerie instantanée
+basée sur le protocole SIP et interopérable avec des produits entreprise
+d'Alcatel.
+UML, C++, SIP.
+-----------------------------------------------------------------------------------------------------------
+Client & server prototype for presence and instand messaging on top of SIP
+protocol.
+Page 4 of 5Adding interoperability with some Alcatel's entreprise products
+UML, C++, SIP.
+Picosorb
+Stagiare
+août 2001 - janvier 2002 (6 mois)
+Bangor - Pays de Galles
+Création de une carte électronique de commande pour une machine d'analyse
+ADN.
+Programmation d’un microcontrôleur PIC en C
+PIC, C, régulation de température .
+-------------------------------------------------------------------------------------------------------
+Electronic board for DNA analysis equipment
+Programming microcontroler PIC in C language
+PIC, C, temperature regulation.
+Formation
+Ecole nationale d'Ingénieurs de Brest
+Ingenieur, Informatique Industrielle · (1998 - 2003)
+Page 5 of 5
