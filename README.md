@@ -129,19 +129,36 @@ code .
 - `create-placeholder-images.html` - Générateur d'images dans le navigateur
 - `README-PHOTOS.md` - Guide détaillé pour la gestion des photos
 
-## 🚀 Déploiement
+## 🚀 Déploiement GitHub Pages
 
-### Hébergement statique :
-- **GitHub Pages** - Gratuit, idéal pour les portfolios
+### 🎯 Publication en 5 minutes :
+
+1. **Créez un repository GitHub** (public pour Pages gratuit)
+2. **Poussez votre code** :
+   ```bash
+   git init
+   git add .
+   git commit -m "🎉 Site CV professionnel"
+   git branch -M main
+   git remote add origin https://github.com/VOTRE-USERNAME/VOTRE-REPO.git
+   git push -u origin main
+   ```
+3. **Activez GitHub Pages** : Settings > Pages > Deploy from branch > main
+4. **Votre site sera accessible à** : `https://VOTRE-USERNAME.github.io/VOTRE-REPO/`
+
+> 📖 **Guide complet :** Consultez `DEPLOYMENT.md` pour les instructions détaillées
+
+### Autres options d'hébergement :
 - **Netlify** - Déploiement automatique depuis Git
 - **Vercel** - Performance optimisée
 - **Serveur web classique** - Apache, Nginx
 
-### Avant le déploiement :
-1. Remplacez toutes les images placeholder
-2. Vérifiez tous les liens et informations de contact
-3. Testez sur mobile et desktop
-4. Optimisez les images (compression)
+### ✅ Checklist avant publication :
+- [ ] Remplacer toutes les images placeholder
+- [ ] Vérifier tous les liens et informations de contact
+- [ ] Tester sur mobile et desktop
+- [ ] Mettre à jour les URLs dans les meta tags
+- [ ] Optimiser les images (compression)
 
 ## 📈 Améliorations Futures
 

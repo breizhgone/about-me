@@ -1,0 +1,32 @@
+# IDE et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Dossiers de build (si vous en ajoutez plus tard)
+dist/
+build/
+node_modules/
+
+# Fichiers de configuration locale
+.env
+.env.local

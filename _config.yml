@@ -1,0 +1,22 @@
+# Configuration GitHub Pages
+title: "Frédéric Thomas - Senior Software Engineering Manager"
+description: "CV professionnel et portfolio de Frédéric Thomas, Senior Software Engineering Manager chez Genesys"
+author: "Frédéric Thomas"
+email: "thomas.fred@gmail.com"
+
+# SEO et métadonnées
+lang: fr
+locale: fr_FR
+
+# GitHub Pages settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files from processing
+exclude:
+  - generate-images.ps1
+  - create-placeholder-images.html
+  - README-PHOTOS.md
+  - .vscode/
+  - .git/
