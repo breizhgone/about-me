@@ -205,54 +205,6 @@ class ContactFormAnimation {
     }
 }
 
-// Image Modal Functionality
-class ImageModal {
-    constructor() {
-        this.modal = document.getElementById('imageModal');
-        this.modalImg = document.getElementById('modalImage');
-        this.modalCaption = document.getElementById('modalCaption');
-        this.closeBtn = document.querySelector('.close');
-        this.init();
-    }
-
-    init() {
-        // Add click event to all gallery images
-        const galleryImages = document.querySelectorAll('.gallery-img');
-        galleryImages.forEach(img => {
-            img.addEventListener('click', (e) => {
-                this.openModal(e.target);
-            });
-        });
-
-        // Close modal events
-        this.closeBtn.addEventListener('click', () => this.closeModal());
-        this.modal.addEventListener('click', (e) => {
-            if (e.target === this.modal) {
-                this.closeModal();
-            }
-        });
-
-        // Close with Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.modal.style.display === 'block') {
-                this.closeModal();
-            }
-        });
-    }
-
-    openModal(img) {
-        this.modal.style.display = 'block';
-        this.modalImg.src = img.src;
-        this.modalCaption.textContent = img.alt;
-        document.body.style.overflow = 'hidden';
-    }
-
-    closeModal() {
-        this.modal.style.display = 'none';
-        document.body.style.overflow = 'auto';
-    }
-}
-
 // Photo Hover Effects
 class PhotoEffects {
     constructor() {
@@ -271,28 +223,6 @@ class PhotoEffects {
                 profileImg.style.transform = 'scale(1) rotate(0deg)';
             });
         }
-
-        // Gallery images tilt effect
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        galleryItems.forEach(item => {
-            item.addEventListener('mousemove', (e) => {
-                const rect = item.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const y = e.clientY - rect.top;
-                
-                const centerX = rect.width / 2;
-                const centerY = rect.height / 2;
-                
-                const rotateX = (y - centerY) / 10;
-                const rotateY = (centerX - x) / 10;
-                
-                item.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
-            });
-            
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
-            });
-        });
     }
 }
 
@@ -334,7 +264,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new TechStackEffects();
     new ParallaxEffect();
     new ContactFormAnimation();
-    new ImageModal();
     new PhotoEffects();
     new LazyLoading();
 
@@ -377,10 +306,6 @@ const additionalStyles = `
 
     img.loaded {
         opacity: 1;
-    }
-
-    .gallery-item {
-        transition: all 0.3s ease;
     }
 
     .timeline-item {
