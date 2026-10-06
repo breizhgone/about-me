@@ -255,20 +255,31 @@ class LazyLoading {
 
 // Initialize all components when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new LanguageToggle();
-    new MobileNavigation();
-    new SmoothScroll();
-    new ScrollAnimations();
-    new NavbarScroll();
-    new TypingAnimation();
-    new TechStackEffects();
-    new ParallaxEffect();
-    new ContactFormAnimation();
-    new PhotoEffects();
-    new LazyLoading();
-
-    // Add loading animation
+    // Reveal the page first so a failure in any single component
+    // can never leave the body stuck at opacity: 0 (blank page).
     document.body.classList.add('loaded');
+
+    const components = [
+        LanguageToggle,
+        MobileNavigation,
+        SmoothScroll,
+        ScrollAnimations,
+        NavbarScroll,
+        TypingAnimation,
+        TechStackEffects,
+        ParallaxEffect,
+        ContactFormAnimation,
+        PhotoEffects,
+        LazyLoading
+    ];
+
+    components.forEach(Component => {
+        try {
+            new Component();
+        } catch (err) {
+            console.error(`Failed to initialize ${Component.name}:`, err);
+        }
+    });
 });
 
 // Add CSS for additional animations
